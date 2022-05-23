@@ -2,21 +2,25 @@
 
 var arr = [-1, 0, 2, 34, -2];
 
-var filterNumbersArr = arr.filter(function(number) {
-  return number > 0;
-});
+function filterNumbersArr(arr) {
+    return arr.filter(function(number) {
+        return number > 0;
+    });
+}
 
-console.log(filterNumbersArr);
+console.log(filterNumbersArr(arr));
 
 //Задание 2//
 
 var arr = [-1, 0, 2, 34, -2];
 
-var foundObj = arr.find(function(number) {
-  return number > 0;
-});
+function foundObj(arr) {
+    return arr.find(function(number) {
+        return number > 0;
+      });
+}
 
-console.log(foundObj);
+console.log(foundObj(arr));
 
 //Задание 3//
 
@@ -32,10 +36,6 @@ console.log(isPalindrome('привет')); // false
 //Задание 4//
 
 function areAnagrams(firstWord, secondWord) {
-  if (firstWord.length !== secondWord.length) {
-		return false;
-	}
-	
 	return firstWord.toLowerCase().split('').sort().join('') === secondWord.toLowerCase().split('').sort().join('');
 }
 
@@ -94,8 +94,12 @@ function degree(number) {
       sum *= 2;
   } 
 
-  return (sum == number) ? true : false;
+  return ((sum == number) || (number == 1)) ? true : false;
 
 }
 
-console.log(degree(16));
+console.log(degree(0));
+console.log(degree(1));
+console.log(degree(2));
+console.log(degree(3));
+console.log(degree(4));
