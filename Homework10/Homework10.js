@@ -94,7 +94,7 @@ function degree(number) {
       sum *= 2;
   } 
 
-  return ((sum == number) || (number == 1)) ? true : false;
+  return ((sum == number) || (number === 1)) ? true : false;
 
 }
 
