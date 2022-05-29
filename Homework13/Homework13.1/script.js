@@ -14,7 +14,6 @@ var button = document.getElementsByTagName('button');
 
 button[0].addEventListener('click', function () {
     var links = firstPar.getElementsByTagName('a');
-  
     for (var link of links) {
       link.classList.add('changed');
     }
@@ -24,11 +23,11 @@ secondPar.onclick = function (event) {
     event.preventDefault();
     var target = event.target;
     if(target.getAttribute('href') == '#') {
-			alert(JSON.parse(localStorage.getItem(target.textContent)).path);
-		} else {
-			localStorage.setItem(target.textContent, JSON.stringify({path: target.href}));
-			target.href = '#';
-			alert('Информация о ссылке сохранена');
+	alert(JSON.parse(localStorage.getItem(target.textContent)).path);
+	} else {
+		localStorage.setItem(target.textContent, JSON.stringify({path: target.href}));
+		target.href = '#';
+		alert('Информация о ссылке сохранена');
 		}
   };
 
