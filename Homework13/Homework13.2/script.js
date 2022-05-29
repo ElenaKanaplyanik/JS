@@ -26,7 +26,6 @@ form.onmousedown = function (e) {
 }
 
 form.onkeyup = function () {
-    
 	var bool = false;
 	for (var i = 0; i < inputs.length; i++) {
 		if(!inputs[i].value || inputs[i].value.indexOf(' ') !== -1) {
