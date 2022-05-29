@@ -1,7 +1,7 @@
 var numbers = document.getElementById('numbers');
-var	button = document.getElementsByTagName('button')[0];
-var	form = document.getElementsByTagName('form')[0];
-var	inputs = form.getElementsByTagName('input');
+var button = document.getElementsByTagName('button')[0];
+var form = document.getElementsByTagName('form')[0];
+var inputs = form.getElementsByTagName('input');
 
 for (var input of inputs){
 	input.onfocus = function (e) {
