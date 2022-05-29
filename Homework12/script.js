@@ -7,8 +7,7 @@ button.addEventListener('click', function () {
 });
 
 table.addEventListener('click', function (event) {
-
-    if (event.target.tagName === 'TD' && !event.target.hasAttribute('colspan')) {
+     if (event.target.tagName === 'TD' && !event.target.hasAttribute('colspan')) {
         var input = document.createElement('input');
         input.value = event.target.innerHTML;
         event.target.innerHTML = '';
@@ -27,7 +26,5 @@ table.addEventListener('click', function (event) {
 
         event.target.appendChild(input);
         input.focus();
-
     }
-
 });
