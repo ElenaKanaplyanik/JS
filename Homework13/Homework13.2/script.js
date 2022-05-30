@@ -3,19 +3,17 @@ var button = document.getElementsByTagName('button')[0];
 var form = document.getElementsByTagName('form')[0];
 var inputs = form.getElementsByTagName('input');
 
-for (var input of inputs){
-	input.onfocus = function (e) {
+for (var i = 0; i < inputs.length; i++) {
+	inputs[i].onfocus = function (e) {
 		if(e.target.tagName = 'INPUT') {
 			e.target.classList.add('active');
 		}
 	}
-
-	input.onblur = function (e) {
+	inputs[i].onblur = function (e) {
 		if(e.target.tagName = 'INPUT') {
 			e.target.classList.remove('active');
 		}
 	}
-	
 }
 
 
