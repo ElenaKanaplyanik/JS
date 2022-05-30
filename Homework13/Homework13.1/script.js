@@ -13,9 +13,11 @@ container.appendChild(secondPar);
 var button = document.getElementsByTagName('button');
 
 button[0].addEventListener('click', function () {
-    var links = firstPar.getElementsByTagName('a');
-    for (var link of links) {
-      link.classList.add('changed');
+    var firstParChildren = firstPar.children; 
+    for (var i = 0; i < firstParChildren.length; i++) {
+        if (firstParChildren[i].tagName === 'A') { 
+            firstParChildren[i].classList.add('changed');
+        }
     }
   });
   
