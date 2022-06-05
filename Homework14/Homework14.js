@@ -68,6 +68,7 @@ var initialObj = {
       alert('Hello');
   }
 };
+
 var comparedObj = {
 	string: 'Vasya',
   number: 30,
@@ -86,7 +87,9 @@ var comparedObj = {
       alert('Hello');
   }
 };
+
 var bool = true;
+
 function comparison(initialObj, comparedObj) {
     if(Object.keys(initialObj).length !== Object.keys(comparedObj).length) {
       bool = false;
