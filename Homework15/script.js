@@ -32,8 +32,8 @@ function getUserData() {
 		for (var j in info) {
 			if(info[j].id == e.target.dataset.id) {
 				var avatar = users.getElementsByClassName('avatarScript')[0];
-				var	firstName = users.getElementsByClassName('userFirstScript')[0];
-				var	surname = users.getElementsByClassName('userSurnameScript')[0];
+				var firstName = users.getElementsByClassName('userFirstScript')[0];
+				var surname = users.getElementsByClassName('userSurnameScript')[0];
 				avatar.src = info[j].avatar;
 				firstName.textContent = info[j].first_name;
 				surname.textContent = info[j].last_name;
