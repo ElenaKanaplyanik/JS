@@ -56,7 +56,6 @@ button {
 	display: flex;
 	padding: 40px;
 	border: 1px solid grey;
-
 }
 .users__photo {
 	object-fit: cover;
