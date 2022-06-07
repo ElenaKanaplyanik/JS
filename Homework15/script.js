@@ -3,8 +3,8 @@ var users = document.getElementById('users'),
 
 function getUserData() {
 	var info = JSON.parse(localStorage.getItem('users')).data;
-	var	tabs = users.getElementsByClassName('tabsScript')[0];
-	var	content = users.getElementsByClassName('contentScript')[0];
+	var tabs = users.getElementsByClassName('tabsScript')[0];
+	var content = users.getElementsByClassName('contentScript')[0];
 
 	btn.disabled = true;
 	
