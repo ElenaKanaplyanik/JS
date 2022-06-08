@@ -20,24 +20,24 @@ var initialObj = {
 };
 
 function deepClone(clone) {
-  var newClone = {};
 
-  if (clone === 'object') {
-      console.log(typeof(clone));
-      if (Array.isArray(clone)) {
-        newClone= [];
-        newClone[key] = deepClone(newClone);
-      }else {
-        newClone = {};
-        newClone = deepClone(newClone);
+  if ( typeof(clone) === 'object' ) {
+      if ( clone === null ) {
+          return clone;
       }
-  } 
 
-  for ( key in clone ) {
-    newClone[key] = clone[key];
+      var newClone = Array.isArray(clone) ? [] : {};
+
+      for ( key in clone ) {
+        newClone[key] = deepClone(clone[key]);
+      }
+
+      return newClone;
+  } else {
+
+      return clone;
   }
-
-  return newClone;
+	
 }
 
 var clonedObj = deepClone(initialObj);
