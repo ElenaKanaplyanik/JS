@@ -6,8 +6,8 @@ console.log(regexp.test('name_surname-1234@gmail.com'));
 //Задание 2
 
 function phone(num){
-	var regexp = /^(\+?375\-?|8\-?0)(25|29|33|44|17)-?(?!0)[0-9]{3}(-?\d{2}){2}$/;
-	console.log(regexp.test(num));
+  var regexp = /^(\+?375\-?|8\-?0)(25|29|33|44|17)-?(?!0)[0-9]{3}(-?\d{2}){2}$/;
+  console.log(regexp.test(num));
 }
 phone('+375-25-777-77-77');
 phone('375299999999');
